@@ -78,6 +78,7 @@ namespace Firts_Forms
             this.model_box = new System.Windows.Forms.TextBox();
             this.model_change_box = new System.Windows.Forms.ComboBox();
             this.change_model_lb = new System.Windows.Forms.Label();
+            this.clear_button = new System.Windows.Forms.Button();
             this.pictureBox_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_1 = new System.Windows.Forms.PictureBox();
@@ -85,7 +86,6 @@ namespace Firts_Forms
             this.nazadRegister_img = new System.Windows.Forms.PictureBox();
             this.nazadLogin_img = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.clear_button = new System.Windows.Forms.Button();
             this.mainPannel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.show_panel.SuspendLayout();
@@ -108,7 +108,7 @@ namespace Firts_Forms
             this.mainPannel.Name = "mainPannel";
             this.mainPannel.Size = new System.Drawing.Size(1176, 80);
             this.mainPannel.TabIndex = 0;
-            this.mainPannel.Text = "Главный экран";
+            this.mainPannel.Text = "Спорт-байки";
             this.mainPannel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.mainPannel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainPannel_MouseDown);
             this.mainPannel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainPannel_MouseMove);
@@ -230,6 +230,7 @@ namespace Firts_Forms
             this.enduro_button.TabIndex = 12;
             this.enduro_button.Text = "Эндуро";
             this.enduro_button.UseVisualStyleBackColor = true;
+            this.enduro_button.Click += new System.EventHandler(this.enduro_button_Click);
             // 
             // moto_eqip_button
             // 
@@ -623,6 +624,16 @@ namespace Firts_Forms
             this.change_model_lb.TabIndex = 62;
             this.change_model_lb.Text = "Выберите нужную модель ->";
             // 
+            // clear_button
+            // 
+            this.clear_button.Location = new System.Drawing.Point(661, 620);
+            this.clear_button.Name = "clear_button";
+            this.clear_button.Size = new System.Drawing.Size(133, 23);
+            this.clear_button.TabIndex = 63;
+            this.clear_button.Text = "Очистка формы";
+            this.clear_button.UseVisualStyleBackColor = true;
+            this.clear_button.Click += new System.EventHandler(this.clear_button_Click);
+            // 
             // pictureBox_3
             // 
             this.pictureBox_3.Image = global::Firts_Forms.Properties.Resources.иконка;
@@ -696,16 +707,6 @@ namespace Firts_Forms
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // clear_button
-            // 
-            this.clear_button.Location = new System.Drawing.Point(661, 620);
-            this.clear_button.Name = "clear_button";
-            this.clear_button.Size = new System.Drawing.Size(133, 23);
-            this.clear_button.TabIndex = 63;
-            this.clear_button.Text = "Очистка формы";
-            this.clear_button.UseVisualStyleBackColor = true;
-            this.clear_button.Click += new System.EventHandler(this.clear_button_Click);
             // 
             // SportForm
             // 

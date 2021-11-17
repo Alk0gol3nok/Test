@@ -42,8 +42,10 @@ namespace Firts_Forms
             date_app.Text = "Дата подачи заявки";
             date_app.ForeColor = Color.Gray;
 
-            type_app.Text = "Тип заявки";
-            type_app.ForeColor = Color.Gray;
+            otzv_box.Text = "Ваш отзыв";
+            otzv_box.ForeColor = Color.Gray;
+
+
         }
 
         Point lastPoint;
@@ -125,17 +127,14 @@ namespace Firts_Forms
                 return;
             }
 
-            if (date_app.Text == "Дата подачи заявки")
+            if (otzv_box.Text == "Ваш отзыв")
             {
-                MessageBox.Show("введите дату подачи заявки");
-                return;
+                MessageBox.Show("введите отзыв");
             }
 
-            if (type_app.Text == "Тип заявки")
-            {
-                MessageBox.Show("введите тип заявки");
-                return;
-            }
+
+
+
 
 
             if (checkUser())
@@ -144,7 +143,7 @@ namespace Firts_Forms
             }
 
             DataBase db = new DataBase();
-            MySqlCommand command = new MySqlCommand("INSERT INTO application (login, Fullname, date_p, number, Dob, Pob, type_app) VALUES (@login, @Fio, @date_p, @num, @dob, @pob, @type)", db.getConnection());
+            MySqlCommand command = new MySqlCommand("INSERT INTO application (login, Fullname, date_p, number, Dob, Pob, otziv) VALUES (@login, @Fio, @date_p, @num, @dob, @pob, @otz)", db.getConnection());
 
             string login = login_app.Text;
             string fio = fio_app.Text;
@@ -152,7 +151,8 @@ namespace Firts_Forms
             string number = number_app.Text;
             string dob = dob_app.Text;
             string pob = pob_app.Text;
-            string type = type_app.Text;
+            string otziv = otzv_box.Text;
+            
 
 
             command.Parameters.Add("@login", MySqlDbType.VarChar).Value = login;
@@ -161,15 +161,16 @@ namespace Firts_Forms
             command.Parameters.Add("@num", MySqlDbType.VarChar).Value = number;
             command.Parameters.Add("@dob", MySqlDbType.VarChar).Value = dob;
             command.Parameters.Add("@pob", MySqlDbType.VarChar).Value = pob;
-            command.Parameters.Add("@type", MySqlDbType.VarChar).Value = type;
+            command.Parameters.Add("@otz", MySqlDbType.VarChar).Value = otziv;
+
 
             db.openConnection();
 
             if (command.ExecuteNonQuery() == 1)
 
-                MessageBox.Show("Заявка подана успешно");
+                MessageBox.Show("Отзыв подан на рассмотрение");
             else
-                MessageBox.Show("Ошибка, заявка не прошла регистрацию");
+                MessageBox.Show("Ошибка, отзыв был отклонён");
 
             db.closeConnection();
         }
@@ -191,7 +192,7 @@ namespace Firts_Forms
 
             if (table.Rows.Count > 0) // проверяем сколько записей уже существует, и верно ли введены данные //
             {
-                MessageBox.Show("Заявка уже подана, находится на рассмотрении");
+                MessageBox.Show("Ваш отзыв уже подан,в данный момент находится на рассмотрении");
                 return true;
             }
 
@@ -314,29 +315,29 @@ namespace Firts_Forms
             }
         }
 
-        private void type_app_Enter(object sender, EventArgs e)
-        {
-            if (type_app.Text == "Тип заявки")
-            {
-                type_app.Text = "";
-                type_app.ForeColor = Color.Black;
-            }
-        }
 
-        private void type_app_Leave(object sender, EventArgs e)
-        {
-            if (type_app.Text == "")
-            {
-                type_app.Text = "Тип заявки";
-                type_app.ForeColor = Color.Gray;
-            }
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
             date_pannel.Show();
         }
 
-        
+        private void otzv_box_Enter(object sender, EventArgs e)
+        {
+            if (otzv_box.Text == "Ваш отзыв")
+            {
+                otzv_box.Text = "";
+                otzv_box.ForeColor = Color.Black;
+            }
+        }
+
+        private void otzv_box_Leave(object sender, EventArgs e)
+        {
+            if (otzv_box.Text == "")
+            {
+                otzv_box.Text = "Ваш отзыв";
+                otzv_box.ForeColor = Color.Gray;
+            }
+        }
     }
 }

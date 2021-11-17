@@ -57,3 +57,6 @@ C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.Add_employess.reso
 C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.Application_pp.resources
 C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.App_adminForm.resources
 C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.SportForm.resources
+C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.csproj.AssemblyReference.cache
+C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.Enduro.resources
+C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.Equip.resources

@@ -174,26 +174,26 @@ namespace Firts_Forms
             adapter.SelectCommand = command;
             adapter.Fill(table);
 
-            model_box.Text = table.Rows[0][1].ToString();
-            dvig_box.Text = table.Rows[0][2].ToString();
-            mosh_box.Text = table.Rows[0][3].ToString();
-            skr_box.Text = table.Rows[0][4].ToString();
-            kpp_box.Text = table.Rows[0][5].ToString();
-            money_box.Text = table.Rows[0][6].ToString();
+            model_box.Text = table.Rows[0][2].ToString();
+            dvig_box.Text = table.Rows[0][3].ToString();
+            mosh_box.Text = table.Rows[0][4].ToString();
+            skr_box.Text = table.Rows[0][5].ToString();
+            kpp_box.Text = table.Rows[0][6].ToString();
+            money_box.Text = table.Rows[0][7].ToString();
 
-            model_box_2.Text = table.Rows[1][1].ToString();
-            dvig_box_2.Text = table.Rows[1][2].ToString();
-            mosh_box_2.Text = table.Rows[1][3].ToString();
-            skr_box_2.Text = table.Rows[1][4].ToString();
-            kpp_box_2.Text = table.Rows[1][5].ToString();
-            money_box_2.Text = table.Rows[1][6].ToString();
+            model_box_2.Text = table.Rows[1][2].ToString();
+            dvig_box_2.Text = table.Rows[1][3].ToString();
+            mosh_box_2.Text = table.Rows[1][4].ToString();
+            skr_box_2.Text = table.Rows[1][5].ToString();
+            kpp_box_2.Text = table.Rows[1][6].ToString();
+            money_box_2.Text = table.Rows[1][7].ToString();
 
-            model_box_3.Text = table.Rows[2][1].ToString();
-            dvig_box_3.Text = table.Rows[2][2].ToString();
-            mosh_box_3.Text = table.Rows[2][3].ToString();
-            skr_box_3.Text = table.Rows[2][4].ToString();
-            kpp_box_3.Text = table.Rows[2][5].ToString();
-            money_box_3.Text = table.Rows[2][6].ToString();
+            model_box_3.Text = table.Rows[2][2].ToString();
+            dvig_box_3.Text = table.Rows[2][3].ToString();
+            mosh_box_3.Text = table.Rows[2][4].ToString();
+            skr_box_3.Text = table.Rows[2][5].ToString();
+            kpp_box_3.Text = table.Rows[2][6].ToString();
+            money_box_3.Text = table.Rows[2][7].ToString();
 
 
             show_panel.Show();
@@ -221,6 +221,13 @@ namespace Firts_Forms
             skr_box_3.Clear();
             kpp_box_3.Clear();
             money_box_3.Clear();
+        }
+
+        private void enduro_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Enduro enduro = new Enduro();
+            enduro.Show();
         }
     }
 }

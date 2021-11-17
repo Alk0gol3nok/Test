@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Firts_Forms
 {
-    public partial class Enduro : Form
+    public partial class Equip : Form
     {
         public bool checkRole(string role, string need)
         {
@@ -25,7 +25,7 @@ namespace Firts_Forms
             }
         }
 
-        public Enduro()
+        public Equip()
         {
             InitializeComponent();
             loginField.Text = "Вы вошли как: ";
@@ -38,22 +38,7 @@ namespace Firts_Forms
             Application.Exit();
         }
 
-
         Point lastPoint;
-
-        private void mainPannel2_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                this.Left += e.X - lastPoint.X;
-                this.Top += e.Y - lastPoint.Y;
-            }
-        }
-
-        private void mainPannel2_MouseDown(object sender, MouseEventArgs e)
-        {
-            lastPoint = new Point(e.X, e.Y);
-        }
 
         private void mainPannel_MouseMove(object sender, MouseEventArgs e)
         {
@@ -65,6 +50,20 @@ namespace Firts_Forms
         }
 
         private void mainPannel_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
+        }
+
+        private void mainPannel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void mainPannel2_MouseDown(object sender, MouseEventArgs e)
         {
             lastPoint = new Point(e.X, e.Y);
         }
@@ -126,6 +125,13 @@ namespace Firts_Forms
 
         private void enduro_button_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Enduro enduro = new Enduro();
+            enduro.Show();
+        }
+
+        private void moto_eqip_button_Click(object sender, EventArgs e)
+        {
             MessageBox.Show("Вы уже находитесь на данной странице");
         }
 
@@ -139,25 +145,25 @@ namespace Firts_Forms
         private void looking_button_Click(object sender, EventArgs e)
         {
             String model = model_box.Text;
-            String dvig = dvig_box.Text;
-            String mosh = mosh_box.Text;
-            String skr = skr_box.Text;
-            String kpp = kpp_box.Text;
+            String ohlajd = ohlajd_box.Text;
+            String vizor = vizor_box.Text;
+            String shtorka = shtorka_box.Text;
+            String bez = bez_box.Text;
             String money = money_box.Text;
             String type = model_change_box.Text;
 
             String model2 = model_box_2.Text;
-            String dvig2 = dvig_box_2.Text;
-            String mosh2 = mosh_box_2.Text;
-            String skr2 = skr_box_2.Text;
-            String kpp2 = kpp_box_2.Text;
+            String ohlajd2 = ohlajd_box_2.Text;
+            String vizor2 = vizor_box_2.Text;
+            String shtorka2 = bez_box_2.Text;
+            String bez2 = bez_box_2.Text;
             String money2 = money_box_2.Text;
 
             String model3 = model_box_3.Text;
-            String dvig3 = dvig_box_3.Text;
-            String mosh3 = mosh_box_3.Text;
-            String skr3 = skr_box_3.Text;
-            String kpp3 = kpp_box_3.Text;
+            String ohlajd3 = ohlajd_box_3.Text;
+            String vizor3 = vizor_box_3.Text;
+            String shtorka3 = shtorka_box_3.Text;
+            String bez3 = bez_box_3.Text;
             String money3 = money_box_3.Text;
 
 
@@ -167,7 +173,7 @@ namespace Firts_Forms
             DataTable table = new DataTable();
 
             MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `enduro_bank` WHERE `type_model` = @tmd", db.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `equip_bank` WHERE `type_model` = @tmd", db.getConnection());
 
             command.Parameters.Add("@tmd", MySqlDbType.VarChar).Value = type;
 
@@ -176,59 +182,53 @@ namespace Firts_Forms
             adapter.Fill(table);
 
             model_box.Text = table.Rows[0][2].ToString();
-            dvig_box.Text = table.Rows[0][3].ToString();
-            mosh_box.Text = table.Rows[0][4].ToString();
-            skr_box.Text = table.Rows[0][5].ToString();
-            kpp_box.Text = table.Rows[0][6].ToString();
+            ohlajd_box.Text = table.Rows[0][3].ToString();
+            vizor_box.Text = table.Rows[0][4].ToString();
+            shtorka_box.Text = table.Rows[0][5].ToString();
+            bez_box.Text = table.Rows[0][6].ToString();
             money_box.Text = table.Rows[0][7].ToString();
 
             model_box_2.Text = table.Rows[1][2].ToString();
-            dvig_box_2.Text = table.Rows[1][3].ToString();
-            mosh_box_2.Text = table.Rows[1][4].ToString();
-            skr_box_2.Text = table.Rows[1][5].ToString();
-            kpp_box_2.Text = table.Rows[1][6].ToString();
+            ohlajd_box_2.Text = table.Rows[1][3].ToString();
+            vizor_box_2.Text = table.Rows[1][4].ToString();
+            shtorka_box_2.Text = table.Rows[1][5].ToString();
+            bez_box_2.Text = table.Rows[1][6].ToString();
             money_box_2.Text = table.Rows[1][7].ToString();
 
             model_box_3.Text = table.Rows[2][2].ToString();
-            dvig_box_3.Text = table.Rows[2][3].ToString();
-            mosh_box_3.Text = table.Rows[2][4].ToString();
-            skr_box_3.Text = table.Rows[2][5].ToString();
-            kpp_box_3.Text = table.Rows[2][6].ToString();
+            ohlajd_box_3.Text = table.Rows[2][3].ToString();
+            vizor_box_3.Text = table.Rows[2][4].ToString();
+            shtorka_box_3.Text = table.Rows[2][5].ToString();
+            bez_box_3.Text = table.Rows[2][6].ToString();
             money_box_3.Text = table.Rows[2][7].ToString();
 
 
-            
+
         }
 
         private void clear_button_Click(object sender, EventArgs e)
         {
             model_box.Clear();
-            dvig_box.Clear();
-            mosh_box.Clear();
-            skr_box.Clear();
-            kpp_box.Clear();
+            ohlajd_box.Clear();
+            vizor_box.Clear();
+            shtorka_box.Clear();
+            bez_box.Clear();
             money_box.Clear();
 
             model_box_2.Clear();
-            dvig_box_2.Clear();
-            mosh_box_2.Clear();
-            skr_box_2.Clear();
-            kpp_box_2.Clear();
+            ohlajd_box_2.Clear();
+            vizor_box_2.Clear();
+            shtorka_box_2.Clear();
+            bez_box_2.Clear();
             money_box_2.Clear();
 
             model_box_3.Clear();
-            dvig_box_3.Clear();
-            mosh_box_3.Clear();
-            skr_box_3.Clear();
-            kpp_box_3.Clear();
+            ohlajd_box_3.Clear();
+            vizor_box_3.Clear();
+            shtorka_box_3.Clear();
+            bez_box_3.Clear();
             money_box_3.Clear();
         }
-
-        private void moto_eqip_button_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Equip eq = new Equip();
-            eq.Show();
-        }
     }
+
 }

@@ -82,6 +82,18 @@
     </Compile>
     <Compile Include="DataBank.cs" />
     <Compile Include="DataBase.cs" />
+    <Compile Include="Enduro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enduro.Designer.cs">
+      <DependentUpon>Enduro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equip.Designer.cs">
+      <DependentUpon>Equip.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +137,12 @@
     <EmbeddedResource Include="ChangePwd.resx">
       <DependentUpon>ChangePwd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Enduro.resx">
+      <DependentUpon>Enduro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equip.resx">
+      <DependentUpon>Equip.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +185,10 @@
   <ItemGroup>
     <Content Include="images\lock.png" />
     <Content Include="images\user.png" />
+    <None Include="Resources\223644.png" />
+    <None Include="Resources\12.png" />
+    <None Include="Resources\11.png" />
+    <None Include="Resources\1.png" />
     <None Include="Resources\иконка.png" />
     <None Include="Resources\yamah_tzr1.png" />
     <None Include="Resources\yamah_tzr.png" />

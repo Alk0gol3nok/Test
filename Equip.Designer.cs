@@ -1,7 +1,7 @@
 ﻿
 namespace Firts_Forms
 {
-    partial class Enduro
+    partial class Equip
     {
         /// <summary>
         /// Required designer variable.
@@ -35,31 +35,31 @@ namespace Firts_Forms
             this.model_change_box = new System.Windows.Forms.ComboBox();
             this.show_panel = new System.Windows.Forms.Panel();
             this.money_lb = new System.Windows.Forms.Label();
-            this.kpp_lb = new System.Windows.Forms.Label();
-            this.skr_lb = new System.Windows.Forms.Label();
-            this.mosh_lb = new System.Windows.Forms.Label();
-            this.dvig_lb = new System.Windows.Forms.Label();
+            this.bez_lb = new System.Windows.Forms.Label();
+            this.shorka_lb = new System.Windows.Forms.Label();
+            this.vizor_lb = new System.Windows.Forms.Label();
+            this.ohlajd_lb = new System.Windows.Forms.Label();
             this.model_lb = new System.Windows.Forms.Label();
             this.buy_button_3 = new System.Windows.Forms.Button();
             this.money_box_3 = new System.Windows.Forms.TextBox();
-            this.kpp_box_3 = new System.Windows.Forms.TextBox();
-            this.skr_box_3 = new System.Windows.Forms.TextBox();
-            this.mosh_box_3 = new System.Windows.Forms.TextBox();
-            this.dvig_box_3 = new System.Windows.Forms.TextBox();
+            this.bez_box_3 = new System.Windows.Forms.TextBox();
+            this.shtorka_box_3 = new System.Windows.Forms.TextBox();
+            this.vizor_box_3 = new System.Windows.Forms.TextBox();
+            this.ohlajd_box_3 = new System.Windows.Forms.TextBox();
             this.model_box_3 = new System.Windows.Forms.TextBox();
             this.buy_button_2 = new System.Windows.Forms.Button();
             this.money_box_2 = new System.Windows.Forms.TextBox();
-            this.kpp_box_2 = new System.Windows.Forms.TextBox();
-            this.skr_box_2 = new System.Windows.Forms.TextBox();
-            this.mosh_box_2 = new System.Windows.Forms.TextBox();
-            this.dvig_box_2 = new System.Windows.Forms.TextBox();
+            this.bez_box_2 = new System.Windows.Forms.TextBox();
+            this.shtorka_box_2 = new System.Windows.Forms.TextBox();
+            this.vizor_box_2 = new System.Windows.Forms.TextBox();
+            this.ohlajd_box_2 = new System.Windows.Forms.TextBox();
             this.model_box_2 = new System.Windows.Forms.TextBox();
             this.buy_button = new System.Windows.Forms.Button();
             this.money_box = new System.Windows.Forms.TextBox();
-            this.kpp_box = new System.Windows.Forms.TextBox();
-            this.skr_box = new System.Windows.Forms.TextBox();
-            this.mosh_box = new System.Windows.Forms.TextBox();
-            this.dvig_box = new System.Windows.Forms.TextBox();
+            this.bez_box = new System.Windows.Forms.TextBox();
+            this.shtorka_box = new System.Windows.Forms.TextBox();
+            this.vizor_box = new System.Windows.Forms.TextBox();
+            this.ohlajd_box = new System.Windows.Forms.TextBox();
             this.model_box = new System.Windows.Forms.TextBox();
             this.looking_button = new System.Windows.Forms.Button();
             this.glav_button = new System.Windows.Forms.Button();
@@ -124,10 +124,10 @@ namespace Firts_Forms
             this.mainPannel2.Controls.Add(this.pictureBox1);
             this.mainPannel2.Controls.Add(this.panel3);
             this.mainPannel2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.mainPannel2.Location = new System.Drawing.Point(-11, -7);
+            this.mainPannel2.Location = new System.Drawing.Point(-6, -10);
             this.mainPannel2.Name = "mainPannel2";
             this.mainPannel2.Size = new System.Drawing.Size(1183, 668);
-            this.mainPannel2.TabIndex = 3;
+            this.mainPannel2.TabIndex = 4;
             this.mainPannel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainPannel2_MouseDown);
             this.mainPannel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainPannel2_MouseMove);
             // 
@@ -154,9 +154,9 @@ namespace Firts_Forms
             // 
             this.model_change_box.FormattingEnabled = true;
             this.model_change_box.Items.AddRange(new object[] {
-            "KAYO",
-            "Honda",
-            "Suzuki"});
+            "AirForm",
+            "Totem-RK",
+            "Keeper"});
             this.model_change_box.Location = new System.Drawing.Point(232, 622);
             this.model_change_box.Name = "model_change_box";
             this.model_change_box.Size = new System.Drawing.Size(121, 21);
@@ -165,31 +165,31 @@ namespace Firts_Forms
             // show_panel
             // 
             this.show_panel.Controls.Add(this.money_lb);
-            this.show_panel.Controls.Add(this.kpp_lb);
-            this.show_panel.Controls.Add(this.skr_lb);
-            this.show_panel.Controls.Add(this.mosh_lb);
-            this.show_panel.Controls.Add(this.dvig_lb);
+            this.show_panel.Controls.Add(this.bez_lb);
+            this.show_panel.Controls.Add(this.shorka_lb);
+            this.show_panel.Controls.Add(this.vizor_lb);
+            this.show_panel.Controls.Add(this.ohlajd_lb);
             this.show_panel.Controls.Add(this.model_lb);
             this.show_panel.Controls.Add(this.buy_button_3);
             this.show_panel.Controls.Add(this.money_box_3);
-            this.show_panel.Controls.Add(this.kpp_box_3);
-            this.show_panel.Controls.Add(this.skr_box_3);
-            this.show_panel.Controls.Add(this.mosh_box_3);
-            this.show_panel.Controls.Add(this.dvig_box_3);
+            this.show_panel.Controls.Add(this.bez_box_3);
+            this.show_panel.Controls.Add(this.shtorka_box_3);
+            this.show_panel.Controls.Add(this.vizor_box_3);
+            this.show_panel.Controls.Add(this.ohlajd_box_3);
             this.show_panel.Controls.Add(this.model_box_3);
             this.show_panel.Controls.Add(this.buy_button_2);
             this.show_panel.Controls.Add(this.money_box_2);
-            this.show_panel.Controls.Add(this.kpp_box_2);
-            this.show_panel.Controls.Add(this.skr_box_2);
-            this.show_panel.Controls.Add(this.mosh_box_2);
-            this.show_panel.Controls.Add(this.dvig_box_2);
+            this.show_panel.Controls.Add(this.bez_box_2);
+            this.show_panel.Controls.Add(this.shtorka_box_2);
+            this.show_panel.Controls.Add(this.vizor_box_2);
+            this.show_panel.Controls.Add(this.ohlajd_box_2);
             this.show_panel.Controls.Add(this.model_box_2);
             this.show_panel.Controls.Add(this.buy_button);
             this.show_panel.Controls.Add(this.money_box);
-            this.show_panel.Controls.Add(this.kpp_box);
-            this.show_panel.Controls.Add(this.skr_box);
-            this.show_panel.Controls.Add(this.mosh_box);
-            this.show_panel.Controls.Add(this.dvig_box);
+            this.show_panel.Controls.Add(this.bez_box);
+            this.show_panel.Controls.Add(this.shtorka_box);
+            this.show_panel.Controls.Add(this.vizor_box);
+            this.show_panel.Controls.Add(this.ohlajd_box);
             this.show_panel.Controls.Add(this.model_box);
             this.show_panel.Controls.Add(this.pictureBox_3);
             this.show_panel.Controls.Add(this.pictureBox_2);
@@ -208,41 +208,41 @@ namespace Firts_Forms
             this.money_lb.TabIndex = 87;
             this.money_lb.Text = "Цена";
             // 
-            // kpp_lb
+            // bez_lb
             // 
-            this.kpp_lb.AutoSize = true;
-            this.kpp_lb.Location = new System.Drawing.Point(761, 32);
-            this.kpp_lb.Name = "kpp_lb";
-            this.kpp_lb.Size = new System.Drawing.Size(30, 13);
-            this.kpp_lb.TabIndex = 86;
-            this.kpp_lb.Text = "КПП";
+            this.bez_lb.AutoSize = true;
+            this.bez_lb.Location = new System.Drawing.Point(740, 32);
+            this.bez_lb.Name = "bez_lb";
+            this.bez_lb.Size = new System.Drawing.Size(79, 13);
+            this.bez_lb.TabIndex = 86;
+            this.bez_lb.Text = "Безопасность";
             // 
-            // skr_lb
+            // shorka_lb
             // 
-            this.skr_lb.AutoSize = true;
-            this.skr_lb.Location = new System.Drawing.Point(598, 32);
-            this.skr_lb.Name = "skr_lb";
-            this.skr_lb.Size = new System.Drawing.Size(86, 13);
-            this.skr_lb.TabIndex = 85;
-            this.skr_lb.Text = "Макс/скорость";
+            this.shorka_lb.AutoSize = true;
+            this.shorka_lb.Location = new System.Drawing.Point(612, 32);
+            this.shorka_lb.Name = "shorka_lb";
+            this.shorka_lb.Size = new System.Drawing.Size(45, 13);
+            this.shorka_lb.TabIndex = 85;
+            this.shorka_lb.Text = "Шторка";
             // 
-            // mosh_lb
+            // vizor_lb
             // 
-            this.mosh_lb.AutoSize = true;
-            this.mosh_lb.Location = new System.Drawing.Point(482, 32);
-            this.mosh_lb.Name = "mosh_lb";
-            this.mosh_lb.Size = new System.Drawing.Size(60, 13);
-            this.mosh_lb.TabIndex = 84;
-            this.mosh_lb.Text = "Мощность";
+            this.vizor_lb.AutoSize = true;
+            this.vizor_lb.Location = new System.Drawing.Point(482, 32);
+            this.vizor_lb.Name = "vizor_lb";
+            this.vizor_lb.Size = new System.Drawing.Size(38, 13);
+            this.vizor_lb.TabIndex = 84;
+            this.vizor_lb.Text = "Визор";
             // 
-            // dvig_lb
+            // ohlajd_lb
             // 
-            this.dvig_lb.AutoSize = true;
-            this.dvig_lb.Location = new System.Drawing.Point(344, 32);
-            this.dvig_lb.Name = "dvig_lb";
-            this.dvig_lb.Size = new System.Drawing.Size(62, 13);
-            this.dvig_lb.TabIndex = 83;
-            this.dvig_lb.Text = "Двигатель";
+            this.ohlajd_lb.AutoSize = true;
+            this.ohlajd_lb.Location = new System.Drawing.Point(344, 32);
+            this.ohlajd_lb.Name = "ohlajd_lb";
+            this.ohlajd_lb.Size = new System.Drawing.Size(70, 13);
+            this.ohlajd_lb.TabIndex = 83;
+            this.ohlajd_lb.Text = "Охлаждение";
             // 
             // model_lb
             // 
@@ -270,37 +270,37 @@ namespace Firts_Forms
             this.money_box_3.Size = new System.Drawing.Size(113, 31);
             this.money_box_3.TabIndex = 80;
             // 
-            // kpp_box_3
+            // bez_box_3
             // 
-            this.kpp_box_3.Location = new System.Drawing.Point(722, 276);
-            this.kpp_box_3.Multiline = true;
-            this.kpp_box_3.Name = "kpp_box_3";
-            this.kpp_box_3.Size = new System.Drawing.Size(113, 31);
-            this.kpp_box_3.TabIndex = 79;
+            this.bez_box_3.Location = new System.Drawing.Point(722, 276);
+            this.bez_box_3.Multiline = true;
+            this.bez_box_3.Name = "bez_box_3";
+            this.bez_box_3.Size = new System.Drawing.Size(113, 31);
+            this.bez_box_3.TabIndex = 79;
             // 
-            // skr_box_3
+            // shtorka_box_3
             // 
-            this.skr_box_3.Location = new System.Drawing.Point(585, 276);
-            this.skr_box_3.Multiline = true;
-            this.skr_box_3.Name = "skr_box_3";
-            this.skr_box_3.Size = new System.Drawing.Size(113, 31);
-            this.skr_box_3.TabIndex = 78;
+            this.shtorka_box_3.Location = new System.Drawing.Point(585, 276);
+            this.shtorka_box_3.Multiline = true;
+            this.shtorka_box_3.Name = "shtorka_box_3";
+            this.shtorka_box_3.Size = new System.Drawing.Size(113, 31);
+            this.shtorka_box_3.TabIndex = 78;
             // 
-            // mosh_box_3
+            // vizor_box_3
             // 
-            this.mosh_box_3.Location = new System.Drawing.Point(453, 276);
-            this.mosh_box_3.Multiline = true;
-            this.mosh_box_3.Name = "mosh_box_3";
-            this.mosh_box_3.Size = new System.Drawing.Size(113, 31);
-            this.mosh_box_3.TabIndex = 77;
+            this.vizor_box_3.Location = new System.Drawing.Point(453, 276);
+            this.vizor_box_3.Multiline = true;
+            this.vizor_box_3.Name = "vizor_box_3";
+            this.vizor_box_3.Size = new System.Drawing.Size(113, 31);
+            this.vizor_box_3.TabIndex = 77;
             // 
-            // dvig_box_3
+            // ohlajd_box_3
             // 
-            this.dvig_box_3.Location = new System.Drawing.Point(318, 276);
-            this.dvig_box_3.Multiline = true;
-            this.dvig_box_3.Name = "dvig_box_3";
-            this.dvig_box_3.Size = new System.Drawing.Size(113, 31);
-            this.dvig_box_3.TabIndex = 76;
+            this.ohlajd_box_3.Location = new System.Drawing.Point(318, 276);
+            this.ohlajd_box_3.Multiline = true;
+            this.ohlajd_box_3.Name = "ohlajd_box_3";
+            this.ohlajd_box_3.Size = new System.Drawing.Size(113, 31);
+            this.ohlajd_box_3.TabIndex = 76;
             // 
             // model_box_3
             // 
@@ -327,37 +327,37 @@ namespace Firts_Forms
             this.money_box_2.Size = new System.Drawing.Size(113, 31);
             this.money_box_2.TabIndex = 73;
             // 
-            // kpp_box_2
+            // bez_box_2
             // 
-            this.kpp_box_2.Location = new System.Drawing.Point(722, 168);
-            this.kpp_box_2.Multiline = true;
-            this.kpp_box_2.Name = "kpp_box_2";
-            this.kpp_box_2.Size = new System.Drawing.Size(113, 31);
-            this.kpp_box_2.TabIndex = 72;
+            this.bez_box_2.Location = new System.Drawing.Point(722, 168);
+            this.bez_box_2.Multiline = true;
+            this.bez_box_2.Name = "bez_box_2";
+            this.bez_box_2.Size = new System.Drawing.Size(113, 31);
+            this.bez_box_2.TabIndex = 72;
             // 
-            // skr_box_2
+            // shtorka_box_2
             // 
-            this.skr_box_2.Location = new System.Drawing.Point(585, 168);
-            this.skr_box_2.Multiline = true;
-            this.skr_box_2.Name = "skr_box_2";
-            this.skr_box_2.Size = new System.Drawing.Size(113, 31);
-            this.skr_box_2.TabIndex = 71;
+            this.shtorka_box_2.Location = new System.Drawing.Point(585, 168);
+            this.shtorka_box_2.Multiline = true;
+            this.shtorka_box_2.Name = "shtorka_box_2";
+            this.shtorka_box_2.Size = new System.Drawing.Size(113, 31);
+            this.shtorka_box_2.TabIndex = 71;
             // 
-            // mosh_box_2
+            // vizor_box_2
             // 
-            this.mosh_box_2.Location = new System.Drawing.Point(453, 168);
-            this.mosh_box_2.Multiline = true;
-            this.mosh_box_2.Name = "mosh_box_2";
-            this.mosh_box_2.Size = new System.Drawing.Size(113, 31);
-            this.mosh_box_2.TabIndex = 70;
+            this.vizor_box_2.Location = new System.Drawing.Point(453, 168);
+            this.vizor_box_2.Multiline = true;
+            this.vizor_box_2.Name = "vizor_box_2";
+            this.vizor_box_2.Size = new System.Drawing.Size(113, 31);
+            this.vizor_box_2.TabIndex = 70;
             // 
-            // dvig_box_2
+            // ohlajd_box_2
             // 
-            this.dvig_box_2.Location = new System.Drawing.Point(318, 168);
-            this.dvig_box_2.Multiline = true;
-            this.dvig_box_2.Name = "dvig_box_2";
-            this.dvig_box_2.Size = new System.Drawing.Size(113, 31);
-            this.dvig_box_2.TabIndex = 69;
+            this.ohlajd_box_2.Location = new System.Drawing.Point(318, 168);
+            this.ohlajd_box_2.Multiline = true;
+            this.ohlajd_box_2.Name = "ohlajd_box_2";
+            this.ohlajd_box_2.Size = new System.Drawing.Size(113, 31);
+            this.ohlajd_box_2.TabIndex = 69;
             // 
             // model_box_2
             // 
@@ -384,37 +384,37 @@ namespace Firts_Forms
             this.money_box.Size = new System.Drawing.Size(113, 31);
             this.money_box.TabIndex = 66;
             // 
-            // kpp_box
+            // bez_box
             // 
-            this.kpp_box.Location = new System.Drawing.Point(722, 68);
-            this.kpp_box.Multiline = true;
-            this.kpp_box.Name = "kpp_box";
-            this.kpp_box.Size = new System.Drawing.Size(113, 31);
-            this.kpp_box.TabIndex = 65;
+            this.bez_box.Location = new System.Drawing.Point(722, 68);
+            this.bez_box.Multiline = true;
+            this.bez_box.Name = "bez_box";
+            this.bez_box.Size = new System.Drawing.Size(113, 31);
+            this.bez_box.TabIndex = 65;
             // 
-            // skr_box
+            // shtorka_box
             // 
-            this.skr_box.Location = new System.Drawing.Point(585, 68);
-            this.skr_box.Multiline = true;
-            this.skr_box.Name = "skr_box";
-            this.skr_box.Size = new System.Drawing.Size(113, 31);
-            this.skr_box.TabIndex = 64;
+            this.shtorka_box.Location = new System.Drawing.Point(585, 68);
+            this.shtorka_box.Multiline = true;
+            this.shtorka_box.Name = "shtorka_box";
+            this.shtorka_box.Size = new System.Drawing.Size(113, 31);
+            this.shtorka_box.TabIndex = 64;
             // 
-            // mosh_box
+            // vizor_box
             // 
-            this.mosh_box.Location = new System.Drawing.Point(453, 68);
-            this.mosh_box.Multiline = true;
-            this.mosh_box.Name = "mosh_box";
-            this.mosh_box.Size = new System.Drawing.Size(113, 31);
-            this.mosh_box.TabIndex = 63;
+            this.vizor_box.Location = new System.Drawing.Point(453, 68);
+            this.vizor_box.Multiline = true;
+            this.vizor_box.Name = "vizor_box";
+            this.vizor_box.Size = new System.Drawing.Size(113, 31);
+            this.vizor_box.TabIndex = 63;
             // 
-            // dvig_box
+            // ohlajd_box
             // 
-            this.dvig_box.Location = new System.Drawing.Point(318, 68);
-            this.dvig_box.Multiline = true;
-            this.dvig_box.Name = "dvig_box";
-            this.dvig_box.Size = new System.Drawing.Size(113, 31);
-            this.dvig_box.TabIndex = 62;
+            this.ohlajd_box.Location = new System.Drawing.Point(318, 68);
+            this.ohlajd_box.Multiline = true;
+            this.ohlajd_box.Name = "ohlajd_box";
+            this.ohlajd_box.Size = new System.Drawing.Size(113, 31);
+            this.ohlajd_box.TabIndex = 62;
             // 
             // model_box
             // 
@@ -615,14 +615,14 @@ namespace Firts_Forms
             this.mainPannel.Name = "mainPannel";
             this.mainPannel.Size = new System.Drawing.Size(1183, 80);
             this.mainPannel.TabIndex = 0;
-            this.mainPannel.Text = "Эндуро-байки";
+            this.mainPannel.Text = "Экип(шлема) страница№1";
             this.mainPannel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.mainPannel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainPannel_MouseDown);
             this.mainPannel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainPannel_MouseMove);
             // 
             // pictureBox_3
             // 
-            this.pictureBox_3.Image = global::Firts_Forms.Properties.Resources._1;
+            this.pictureBox_3.Image = global::Firts_Forms.Properties.Resources._12;
             this.pictureBox_3.Location = new System.Drawing.Point(28, 244);
             this.pictureBox_3.Name = "pictureBox_3";
             this.pictureBox_3.Size = new System.Drawing.Size(139, 82);
@@ -632,7 +632,7 @@ namespace Firts_Forms
             // 
             // pictureBox_2
             // 
-            this.pictureBox_2.Image = global::Firts_Forms.Properties.Resources._1;
+            this.pictureBox_2.Image = global::Firts_Forms.Properties.Resources._12;
             this.pictureBox_2.Location = new System.Drawing.Point(28, 141);
             this.pictureBox_2.Name = "pictureBox_2";
             this.pictureBox_2.Size = new System.Drawing.Size(139, 82);
@@ -642,8 +642,8 @@ namespace Firts_Forms
             // 
             // pictureBox_1
             // 
-            this.pictureBox_1.Image = global::Firts_Forms.Properties.Resources._1;
-            this.pictureBox_1.Location = new System.Drawing.Point(28, 41);
+            this.pictureBox_1.Image = global::Firts_Forms.Properties.Resources._12;
+            this.pictureBox_1.Location = new System.Drawing.Point(28, 44);
             this.pictureBox_1.Name = "pictureBox_1";
             this.pictureBox_1.Size = new System.Drawing.Size(139, 82);
             this.pictureBox_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -694,14 +694,14 @@ namespace Firts_Forms
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // Enduro
+            // Equip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1170, 655);
+            this.ClientSize = new System.Drawing.Size(1171, 648);
             this.Controls.Add(this.mainPannel2);
-            this.Name = "Enduro";
-            this.Text = "Enduro";
+            this.Name = "Equip";
+            this.Text = "Equip";
             this.mainPannel2.ResumeLayout(false);
             this.mainPannel2.PerformLayout();
             this.show_panel.ResumeLayout(false);
@@ -727,31 +727,31 @@ namespace Firts_Forms
         private System.Windows.Forms.ComboBox model_change_box;
         private System.Windows.Forms.Panel show_panel;
         private System.Windows.Forms.Label money_lb;
-        private System.Windows.Forms.Label kpp_lb;
-        private System.Windows.Forms.Label skr_lb;
-        private System.Windows.Forms.Label mosh_lb;
-        private System.Windows.Forms.Label dvig_lb;
+        private System.Windows.Forms.Label bez_lb;
+        private System.Windows.Forms.Label shorka_lb;
+        private System.Windows.Forms.Label vizor_lb;
+        private System.Windows.Forms.Label ohlajd_lb;
         private System.Windows.Forms.Label model_lb;
         private System.Windows.Forms.Button buy_button_3;
         private System.Windows.Forms.TextBox money_box_3;
-        private System.Windows.Forms.TextBox kpp_box_3;
-        private System.Windows.Forms.TextBox skr_box_3;
-        private System.Windows.Forms.TextBox mosh_box_3;
-        private System.Windows.Forms.TextBox dvig_box_3;
+        private System.Windows.Forms.TextBox bez_box_3;
+        private System.Windows.Forms.TextBox shtorka_box_3;
+        private System.Windows.Forms.TextBox vizor_box_3;
+        private System.Windows.Forms.TextBox ohlajd_box_3;
         private System.Windows.Forms.TextBox model_box_3;
         private System.Windows.Forms.Button buy_button_2;
         private System.Windows.Forms.TextBox money_box_2;
-        private System.Windows.Forms.TextBox kpp_box_2;
-        private System.Windows.Forms.TextBox skr_box_2;
-        private System.Windows.Forms.TextBox mosh_box_2;
-        private System.Windows.Forms.TextBox dvig_box_2;
+        private System.Windows.Forms.TextBox bez_box_2;
+        private System.Windows.Forms.TextBox shtorka_box_2;
+        private System.Windows.Forms.TextBox vizor_box_2;
+        private System.Windows.Forms.TextBox ohlajd_box_2;
         private System.Windows.Forms.TextBox model_box_2;
         private System.Windows.Forms.Button buy_button;
         private System.Windows.Forms.TextBox money_box;
-        private System.Windows.Forms.TextBox kpp_box;
-        private System.Windows.Forms.TextBox skr_box;
-        private System.Windows.Forms.TextBox mosh_box;
-        private System.Windows.Forms.TextBox dvig_box;
+        private System.Windows.Forms.TextBox bez_box;
+        private System.Windows.Forms.TextBox shtorka_box;
+        private System.Windows.Forms.TextBox vizor_box;
+        private System.Windows.Forms.TextBox ohlajd_box;
         private System.Windows.Forms.TextBox model_box;
         private System.Windows.Forms.PictureBox pictureBox_3;
         private System.Windows.Forms.PictureBox pictureBox_2;
