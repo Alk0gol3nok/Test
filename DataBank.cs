@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Firts_Forms
+{
+    static class DataBank
+    {
+      public static string text;
+    }
+
+    static class RoleBank
+    {
+        public static string text;
+    }
+}
