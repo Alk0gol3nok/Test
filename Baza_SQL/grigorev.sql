@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Ноя 17 2021 г., 06:53
+-- Время создания: Ноя 22 2021 г., 09:37
 -- Версия сервера: 8.0.19
 -- Версия PHP: 8.0.1
 
@@ -88,7 +88,8 @@ CREATE TABLE `employees` (
 
 INSERT INTO `employees` (`id`, `login`, `password`, `Fullname`, `Dob`, `Pob`, `PhoneNumber`, `role`) VALUES
 (6, 'Test', '123', 'Test Test', '06.11.2001', 'SPB', '6757655', 'бухгалтер'),
-(7, 'test123', '2131', 'bgfdgfd', '06.12.2002', 'gfdgfdg', '5435435643', 'бухгалтер');
+(7, 'test123', '2131', 'bgfdgfd', '06.12.2002', 'gfdgfdg', '5435435643', 'бухгалтер'),
+(8, 'Test55', '123', 'test', '06.11.2001', 'SPB', '6546546456', 'менеджер');
 
 -- --------------------------------------------------------
 
@@ -145,6 +146,30 @@ INSERT INTO `equip_bank` (`id`, `type_model`, `model`, `ohlajdenie`, `vizor`, `s
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `pokypki`
+--
+
+CREATE TABLE `pokypki` (
+  `model` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'model',
+  `money` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'money',
+  `login` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'login',
+  `fio` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'fio',
+  `number` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'number',
+  `address` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'address'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `pokypki`
+--
+
+INSERT INTO `pokypki` (`model`, `money`, `login`, `fio`, `number`, `address`) VALUES
+('', '', '', '', '', ''),
+('Yamaha R3', '600тыс/руб', 'gfdg', 'gfdgfd', 'gdfgfd', 'gdfgdf'),
+('Yamaha R3', '600тыс/руб', 'gfdg', 'gfdgfd', 'gdfgfd', 'gdfgdf');
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `sport_bank`
 --
 
@@ -182,20 +207,22 @@ CREATE TABLE `users` (
   `Dob` varchar(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'Dob',
   `Pob` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'Pob',
   `PhoneNumber` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'PhoneNumber',
-  `role` text NOT NULL
+  `role` text NOT NULL,
+  `metka` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'us'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `users`
 --
 
-INSERT INTO `users` (`id`, `login`, `password`, `Fullname`, `Dob`, `Pob`, `PhoneNumber`, `role`) VALUES
-(1, '@login', '@password', '@Fio', '@date', '@place', '@num', ''),
-(61, 'Alex', '123', 'fdgfdgfd', '06.12.2002', 'gfdgfdgfd', '5643654', 'админ'),
-(62, 'Alex123', '12345', 'Alex Alex', '06.11.2001', 'SPB', '7931017683', 'пользователь'),
-(63, 'Alex11', '12345', 'Alex Alex', '06.11.2001', 'SPB', '793110176833', 'пользователь'),
-(64, 'Alex1232123', '123', 'Alex Alex', '06.11.2001', 'SPB', '79311017683', 'пользователь'),
-(65, 'Bob45', 'bob123', 'Bob Bob', '06.06.2006', 'SPB', '789454', 'пользователь');
+INSERT INTO `users` (`id`, `login`, `password`, `Fullname`, `Dob`, `Pob`, `PhoneNumber`, `role`, `metka`) VALUES
+(66, 'Cheb', '123', 'Cheb Cheb Cheb', '2001.22.08', 'SPB', '785643965', 'пользователь', 'us'),
+(61, 'Alex', '123', 'fdgfdgfd', '06.12.2002', 'gfdgfdgfd', '5643654', 'админ', 'sub'),
+(67, 'Loger', '123', 'Loger Loger Loger', '2002.22.06', 'SPB', '76578654564', 'пользователь', 'us'),
+(62, 'Alex123', '12345', 'Alex Alex', '06.11.2001', 'SPB', '7931017683', 'пользователь', 'us'),
+(63, 'Alex11', '12345', 'Alex Alex', '06.11.2001', 'SPB', '793110176833', 'пользователь', 'us'),
+(64, 'Alex1232123', '123', 'Alex Alex', '06.11.2001', 'SPB', '79311017683', 'пользователь', 'us'),
+(65, 'Bob45', 'bob123', 'Bob Bob', '06.06.2006', 'SPB', '789454', 'пользователь', 'us');
 
 --
 -- Индексы сохранённых таблиц
@@ -263,7 +290,7 @@ ALTER TABLE `application_seal`
 -- AUTO_INCREMENT для таблицы `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT для таблицы `enduro_bank`
@@ -287,7 +314,7 @@ ALTER TABLE `sport_bank`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
