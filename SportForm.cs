@@ -33,6 +33,7 @@ namespace Firts_Forms
             User_checker_field.Text = DataBank.text;
 
             show_panel.Hide();
+            
         }
 
         private void closeB_Click(object sender, EventArgs e)
@@ -228,6 +229,27 @@ namespace Firts_Forms
             this.Hide();
             Enduro enduro = new Enduro();
             enduro.Show();
+        }
+
+        private void moto_eqip_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Equip eq = new Equip();
+            eq.Show();
+        }
+
+        private void news_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NewsForm nw = new NewsForm();
+            nw.Show();
+        }
+
+        private void buy_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PokypkaForm pk = new PokypkaForm();
+            pk.Show();
         }
     }
 }

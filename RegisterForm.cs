@@ -43,7 +43,7 @@ namespace Firts_Forms
 
 
 
-        Point lastPoint; // класс для задания координат, задаю переменную "Ласт_Поинт" //
+        Point lastPoint; 
 
         private void mainPannel2_MouseMove(object sender, MouseEventArgs e)
         {
@@ -200,7 +200,7 @@ namespace Firts_Forms
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
-            if (loginField.Text == "логин") // проверка на пустоту //
+            if (loginField.Text == "логин") 
             {
                 MessageBox.Show("введите логин");
                 return;
@@ -273,22 +273,22 @@ namespace Firts_Forms
             db.closeConnection();
         }
 
-        public Boolean checkUser() // проверка на уникальность логина //
+        public Boolean checkUser() 
         {
-            DataBase db = new DataBase(); // создаём нужные объекты //
+            DataBase db = new DataBase(); 
 
             DataTable table = new DataTable();
 
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @uL OR `PhoneNumber` = @num", db.getConnection()); // ставим загрушки //
-            command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginField.Text; // вставляю в заглушку переменную //
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @uL OR `PhoneNumber` = @num", db.getConnection()); 
+            command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginField.Text; 
             command.Parameters.Add("@num", MySqlDbType.VarChar).Value = numberField.Text; 
 
             adapter.SelectCommand = command;
             adapter.Fill(table);
 
-            if (table.Rows.Count > 0) // проверяем сколько записей уже существует, и верно ли введены данные //
+            if (table.Rows.Count > 0) 
             {
                 MessageBox.Show("Логин или номер телефона уже зарегистрированы, введите другие данные");
                 return true;

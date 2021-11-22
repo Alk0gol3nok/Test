@@ -230,5 +230,12 @@ namespace Firts_Forms
             Equip eq = new Equip();
             eq.Show();
         }
+
+        private void news_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NewsForm nw = new NewsForm();
+            nw.Show();
+        }
     }
 }

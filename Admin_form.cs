@@ -208,6 +208,20 @@ namespace Firts_Forms
             App_adminForm appAd = new App_adminForm();
             appAd.Show();
         }
+
+        private void look_users_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LookingUsersForm look = new LookingUsersForm();
+            look.Show();
+        }
+
+        private void looing_sub_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LookingSubForm ls = new LookingSubForm();
+            ls.Show();
+        }
     }
     
 }

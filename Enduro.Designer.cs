@@ -61,13 +61,19 @@ namespace Firts_Forms
             this.mosh_box = new System.Windows.Forms.TextBox();
             this.dvig_box = new System.Windows.Forms.TextBox();
             this.model_box = new System.Windows.Forms.TextBox();
+            this.pictureBox_3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_1 = new System.Windows.Forms.PictureBox();
             this.looking_button = new System.Windows.Forms.Button();
             this.glav_button = new System.Windows.Forms.Button();
             this.nazad_reg_lb = new System.Windows.Forms.Label();
             this.nazad_lg_lb = new System.Windows.Forms.Label();
             this.tech_button = new System.Windows.Forms.Button();
             this.kab_button = new System.Windows.Forms.Button();
+            this.kab_png = new System.Windows.Forms.PictureBox();
             this.kab_text = new System.Windows.Forms.Label();
+            this.nazadRegister_img = new System.Windows.Forms.PictureBox();
+            this.nazadLogin_img = new System.Windows.Forms.PictureBox();
             this.review_button = new System.Windows.Forms.Button();
             this.news_button = new System.Windows.Forms.Button();
             this.enduro_button = new System.Windows.Forms.Button();
@@ -75,19 +81,12 @@ namespace Firts_Forms
             this.sport_button = new System.Windows.Forms.Button();
             this.User_checker_field = new System.Windows.Forms.TextBox();
             this.loginField = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Label();
             this.mainPannel = new System.Windows.Forms.Label();
-            this.pictureBox_3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_1 = new System.Windows.Forms.PictureBox();
-            this.kab_png = new System.Windows.Forms.PictureBox();
-            this.nazadRegister_img = new System.Windows.Forms.PictureBox();
-            this.nazadLogin_img = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mainPannel2.SuspendLayout();
             this.show_panel.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_1)).BeginInit();
@@ -95,6 +94,7 @@ namespace Firts_Forms
             ((System.ComponentModel.ISupportInitialize)(this.nazadRegister_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nazadLogin_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPannel2
@@ -424,6 +424,36 @@ namespace Firts_Forms
             this.model_box.Size = new System.Drawing.Size(113, 31);
             this.model_box.TabIndex = 61;
             // 
+            // pictureBox_3
+            // 
+            this.pictureBox_3.Image = global::Firts_Forms.Properties.Resources._1;
+            this.pictureBox_3.Location = new System.Drawing.Point(28, 244);
+            this.pictureBox_3.Name = "pictureBox_3";
+            this.pictureBox_3.Size = new System.Drawing.Size(139, 82);
+            this.pictureBox_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_3.TabIndex = 60;
+            this.pictureBox_3.TabStop = false;
+            // 
+            // pictureBox_2
+            // 
+            this.pictureBox_2.Image = global::Firts_Forms.Properties.Resources._1;
+            this.pictureBox_2.Location = new System.Drawing.Point(28, 141);
+            this.pictureBox_2.Name = "pictureBox_2";
+            this.pictureBox_2.Size = new System.Drawing.Size(139, 82);
+            this.pictureBox_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_2.TabIndex = 59;
+            this.pictureBox_2.TabStop = false;
+            // 
+            // pictureBox_1
+            // 
+            this.pictureBox_1.Image = global::Firts_Forms.Properties.Resources._1;
+            this.pictureBox_1.Location = new System.Drawing.Point(28, 41);
+            this.pictureBox_1.Name = "pictureBox_1";
+            this.pictureBox_1.Size = new System.Drawing.Size(139, 82);
+            this.pictureBox_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_1.TabIndex = 58;
+            this.pictureBox_1.TabStop = false;
+            // 
             // looking_button
             // 
             this.looking_button.Location = new System.Drawing.Point(377, 601);
@@ -488,6 +518,16 @@ namespace Firts_Forms
             this.kab_button.MouseEnter += new System.EventHandler(this.kab_button_MouseEnter);
             this.kab_button.MouseLeave += new System.EventHandler(this.kab_button_MouseLeave);
             // 
+            // kab_png
+            // 
+            this.kab_png.Image = global::Firts_Forms.Properties.Resources.user;
+            this.kab_png.Location = new System.Drawing.Point(1063, 86);
+            this.kab_png.Name = "kab_png";
+            this.kab_png.Size = new System.Drawing.Size(74, 49);
+            this.kab_png.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.kab_png.TabIndex = 22;
+            this.kab_png.TabStop = false;
+            // 
             // kab_text
             // 
             this.kab_text.AutoSize = true;
@@ -497,6 +537,30 @@ namespace Firts_Forms
             this.kab_text.Size = new System.Drawing.Size(148, 20);
             this.kab_text.TabIndex = 21;
             this.kab_text.Text = "Личный кабинет";
+            // 
+            // nazadRegister_img
+            // 
+            this.nazadRegister_img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.nazadRegister_img.Image = global::Firts_Forms.Properties.Resources._return;
+            this.nazadRegister_img.Location = new System.Drawing.Point(924, 605);
+            this.nazadRegister_img.Name = "nazadRegister_img";
+            this.nazadRegister_img.Size = new System.Drawing.Size(45, 39);
+            this.nazadRegister_img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.nazadRegister_img.TabIndex = 20;
+            this.nazadRegister_img.TabStop = false;
+            this.nazadRegister_img.Click += new System.EventHandler(this.nazadRegister_img_Click);
+            // 
+            // nazadLogin_img
+            // 
+            this.nazadLogin_img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.nazadLogin_img.Image = global::Firts_Forms.Properties.Resources._return;
+            this.nazadLogin_img.Location = new System.Drawing.Point(1081, 605);
+            this.nazadLogin_img.Name = "nazadLogin_img";
+            this.nazadLogin_img.Size = new System.Drawing.Size(44, 39);
+            this.nazadLogin_img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.nazadLogin_img.TabIndex = 19;
+            this.nazadLogin_img.TabStop = false;
+            this.nazadLogin_img.Click += new System.EventHandler(this.nazadLogin_img_Click);
             // 
             // review_button
             // 
@@ -518,6 +582,7 @@ namespace Firts_Forms
             this.news_button.TabIndex = 15;
             this.news_button.Text = "Новости";
             this.news_button.UseVisualStyleBackColor = true;
+            this.news_button.Click += new System.EventHandler(this.news_button_Click);
             // 
             // enduro_button
             // 
@@ -578,6 +643,16 @@ namespace Firts_Forms
             this.loginField.TabIndex = 3;
             this.loginField.Text = "Вы вошли как:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Firts_Forms.Properties.Resources.computer;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 86);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(27)))), ((int)(((byte)(89)))));
@@ -620,80 +695,6 @@ namespace Firts_Forms
             this.mainPannel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainPannel_MouseDown);
             this.mainPannel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainPannel_MouseMove);
             // 
-            // pictureBox_3
-            // 
-            this.pictureBox_3.Image = global::Firts_Forms.Properties.Resources._1;
-            this.pictureBox_3.Location = new System.Drawing.Point(28, 244);
-            this.pictureBox_3.Name = "pictureBox_3";
-            this.pictureBox_3.Size = new System.Drawing.Size(139, 82);
-            this.pictureBox_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_3.TabIndex = 60;
-            this.pictureBox_3.TabStop = false;
-            // 
-            // pictureBox_2
-            // 
-            this.pictureBox_2.Image = global::Firts_Forms.Properties.Resources._1;
-            this.pictureBox_2.Location = new System.Drawing.Point(28, 141);
-            this.pictureBox_2.Name = "pictureBox_2";
-            this.pictureBox_2.Size = new System.Drawing.Size(139, 82);
-            this.pictureBox_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_2.TabIndex = 59;
-            this.pictureBox_2.TabStop = false;
-            // 
-            // pictureBox_1
-            // 
-            this.pictureBox_1.Image = global::Firts_Forms.Properties.Resources._1;
-            this.pictureBox_1.Location = new System.Drawing.Point(28, 41);
-            this.pictureBox_1.Name = "pictureBox_1";
-            this.pictureBox_1.Size = new System.Drawing.Size(139, 82);
-            this.pictureBox_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_1.TabIndex = 58;
-            this.pictureBox_1.TabStop = false;
-            // 
-            // kab_png
-            // 
-            this.kab_png.Image = global::Firts_Forms.Properties.Resources.user;
-            this.kab_png.Location = new System.Drawing.Point(1063, 86);
-            this.kab_png.Name = "kab_png";
-            this.kab_png.Size = new System.Drawing.Size(74, 49);
-            this.kab_png.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.kab_png.TabIndex = 22;
-            this.kab_png.TabStop = false;
-            // 
-            // nazadRegister_img
-            // 
-            this.nazadRegister_img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.nazadRegister_img.Image = global::Firts_Forms.Properties.Resources._return;
-            this.nazadRegister_img.Location = new System.Drawing.Point(924, 605);
-            this.nazadRegister_img.Name = "nazadRegister_img";
-            this.nazadRegister_img.Size = new System.Drawing.Size(45, 39);
-            this.nazadRegister_img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.nazadRegister_img.TabIndex = 20;
-            this.nazadRegister_img.TabStop = false;
-            this.nazadRegister_img.Click += new System.EventHandler(this.nazadRegister_img_Click);
-            // 
-            // nazadLogin_img
-            // 
-            this.nazadLogin_img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.nazadLogin_img.Image = global::Firts_Forms.Properties.Resources._return;
-            this.nazadLogin_img.Location = new System.Drawing.Point(1081, 605);
-            this.nazadLogin_img.Name = "nazadLogin_img";
-            this.nazadLogin_img.Size = new System.Drawing.Size(44, 39);
-            this.nazadLogin_img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.nazadLogin_img.TabIndex = 19;
-            this.nazadLogin_img.TabStop = false;
-            this.nazadLogin_img.Click += new System.EventHandler(this.nazadLogin_img_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Firts_Forms.Properties.Resources.computer;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 86);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // Enduro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -706,8 +707,6 @@ namespace Firts_Forms
             this.mainPannel2.PerformLayout();
             this.show_panel.ResumeLayout(false);
             this.show_panel.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_1)).EndInit();
@@ -715,6 +714,8 @@ namespace Firts_Forms
             ((System.ComponentModel.ISupportInitialize)(this.nazadRegister_img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nazadLogin_img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }

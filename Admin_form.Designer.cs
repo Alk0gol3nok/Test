@@ -30,6 +30,8 @@ namespace Firts_Forms
         private void InitializeComponent()
         {
             this.mainPannel2 = new System.Windows.Forms.Panel();
+            this.looing_sub_button = new System.Windows.Forms.Button();
+            this.look_users = new System.Windows.Forms.Button();
             this.menu_app = new System.Windows.Forms.Button();
             this.add_emp = new System.Windows.Forms.Button();
             this.action_menu_text = new System.Windows.Forms.Label();
@@ -69,6 +71,8 @@ namespace Firts_Forms
             // mainPannel2
             // 
             this.mainPannel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(75)))), ((int)(((byte)(158)))));
+            this.mainPannel2.Controls.Add(this.looing_sub_button);
+            this.mainPannel2.Controls.Add(this.look_users);
             this.mainPannel2.Controls.Add(this.menu_app);
             this.mainPannel2.Controls.Add(this.add_emp);
             this.mainPannel2.Controls.Add(this.action_menu_text);
@@ -101,6 +105,32 @@ namespace Firts_Forms
             this.mainPannel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainPannel2_MouseDown);
             this.mainPannel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainPannel2_MouseMove);
             // 
+            // looing_sub_button
+            // 
+            this.looing_sub_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.looing_sub_button.FlatAppearance.BorderSize = 0;
+            this.looing_sub_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.looing_sub_button.Location = new System.Drawing.Point(427, 416);
+            this.looing_sub_button.Name = "looing_sub_button";
+            this.looing_sub_button.Size = new System.Drawing.Size(154, 23);
+            this.looing_sub_button.TabIndex = 32;
+            this.looing_sub_button.Text = "Обзор Sub-пользователей";
+            this.looing_sub_button.UseVisualStyleBackColor = true;
+            this.looing_sub_button.Click += new System.EventHandler(this.looing_sub_button_Click);
+            // 
+            // look_users
+            // 
+            this.look_users.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.look_users.FlatAppearance.BorderSize = 0;
+            this.look_users.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.look_users.Location = new System.Drawing.Point(281, 416);
+            this.look_users.Name = "look_users";
+            this.look_users.Size = new System.Drawing.Size(140, 23);
+            this.look_users.TabIndex = 31;
+            this.look_users.Text = "Обзор пользователей";
+            this.look_users.UseVisualStyleBackColor = true;
+            this.look_users.Click += new System.EventHandler(this.look_users_Click);
+            // 
             // menu_app
             // 
             this.menu_app.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -110,7 +140,7 @@ namespace Firts_Forms
             this.menu_app.Name = "menu_app";
             this.menu_app.Size = new System.Drawing.Size(123, 23);
             this.menu_app.TabIndex = 30;
-            this.menu_app.Text = "Меню заявок";
+            this.menu_app.Text = "Меню отзывов";
             this.menu_app.UseVisualStyleBackColor = true;
             this.menu_app.Click += new System.EventHandler(this.menu_app_Click);
             this.menu_app.MouseEnter += new System.EventHandler(this.menu_app_MouseEnter);
@@ -449,5 +479,7 @@ namespace Firts_Forms
         private System.Windows.Forms.Label action_menu_text;
         private System.Windows.Forms.Button menu_app;
         private System.Windows.Forms.Button add_emp;
+        private System.Windows.Forms.Button look_users;
+        private System.Windows.Forms.Button looing_sub_button;
     }
 }

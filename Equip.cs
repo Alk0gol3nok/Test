@@ -229,6 +229,13 @@ namespace Firts_Forms
             bez_box_3.Clear();
             money_box_3.Clear();
         }
+
+        private void news_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            NewsForm news = new NewsForm();
+            news.Show();
+        }
     }
 
 }

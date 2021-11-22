@@ -403,6 +403,16 @@ namespace Firts_Forms.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap эндуро_байк {
+            get {
+                object obj = ResourceManager.GetObject("эндуро-байк", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ээ {
             get {
                 object obj = ResourceManager.GetObject("ээ", resourceCulture);

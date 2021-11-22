@@ -62,11 +62,23 @@
     <Compile Include="Admin_form.Designer.cs">
       <DependentUpon>Admin_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Application.cs">
+    <Compile Include="LookingSubForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Application.Designer.cs">
-      <DependentUpon>Application.cs</DependentUpon>
+    <Compile Include="LookingSubForm.Designer.cs">
+      <DependentUpon>LookingSubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookingUsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookingUsersForm.Designer.cs">
+      <DependentUpon>LookingUsersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otziv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otziv.Designer.cs">
+      <DependentUpon>Otziv.cs</DependentUpon>
     </Compile>
     <Compile Include="app_adminForm.cs">
       <SubType>Form</SubType>
@@ -108,6 +120,18 @@
       <DependentUpon>MainForm.cs</DependentUpon>
       <Link>MainForm.Designer.cs</Link>
     </Compile>
+    <Compile Include="NewsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewsForm.Designer.cs">
+      <DependentUpon>NewsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PokypkaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PokypkaForm.Designer.cs">
+      <DependentUpon>PokypkaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterForm.cs">
@@ -128,8 +152,14 @@
     <EmbeddedResource Include="Admin_form.resx">
       <DependentUpon>Admin_form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Application.resx">
-      <DependentUpon>Application.cs</DependentUpon>
+    <EmbeddedResource Include="LookingSubForm.resx">
+      <DependentUpon>LookingSubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookingUsersForm.resx">
+      <DependentUpon>LookingUsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otziv.resx">
+      <DependentUpon>Otziv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="app_adminForm.resx">
       <DependentUpon>app_adminForm.cs</DependentUpon>
@@ -149,6 +179,12 @@
     <EmbeddedResource Include="C:\Users\aleks\OneDrive\Рабочий стол\Form\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
       <Link>MainForm.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewsForm.resx">
+      <DependentUpon>NewsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PokypkaForm.resx">
+      <DependentUpon>PokypkaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -185,6 +221,7 @@
   <ItemGroup>
     <Content Include="images\lock.png" />
     <Content Include="images\user.png" />
+    <None Include="Resources\эндуро-байк.png" />
     <None Include="Resources\223644.png" />
     <None Include="Resources\12.png" />
     <None Include="Resources\11.png" />

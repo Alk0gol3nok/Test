@@ -60,3 +60,7 @@ C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.SportForm.resource
 C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.csproj.AssemblyReference.cache
 C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.Enduro.resources
 C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.Equip.resources
+C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.NewsForm.resources
+C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.LookingUsersForm.resources
+C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.LookingSubForm.resources
+C:\Users\aleks\source\repos\Firts_Forms\obj\Debug\Firts_Forms.PokypkaForm.resources
