@@ -39,30 +39,29 @@ namespace Firts_Forms
             String number = number_app_box.Text;
             String dop = dob_app_box.Text;
             String pob = pob_app_box.Text;
-            String type_ap = type_app_box.Text;
-            String date_y = date_y_app_box.Text;
+            String otziv = otziv_box.Text;
 
 
             DataBase db = new DataBase();
             DataTable table = new DataTable();
 
             MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `application` WHERE `type_app` = @tfield", db.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `application` WHERE `type` = @tf", db.getConnection());
 
-            command.Parameters.Add("@tfield", MySqlDbType.VarChar).Value = tfield; 
+            command.Parameters.Add("@tf", MySqlDbType.VarChar).Value = tfield; 
 
 
             adapter.SelectCommand = command;
             adapter.Fill(table);
 
-            type_app_box.Text = table.Rows[0][1].ToString();
+            
             login_app_box.Text = table.Rows[0][2].ToString();
             fullName_app_box.Text = table.Rows[0][3].ToString();
             date_p_app_box.Text = table.Rows[0][4].ToString();
             number_app_box.Text = table.Rows[0][5].ToString();
             dob_app_box.Text = table.Rows[0][6].ToString();
             pob_app_box.Text = table.Rows[0][7].ToString();
-            date_y_app_box.Text = table.Rows[0][8].ToString();
+            otziv_box.Text = table.Rows[0][8].ToString();
 
 
             main_pannel.Show();
@@ -150,7 +149,34 @@ namespace Firts_Forms
             adapter.SelectCommand = command;
             adapter.Fill(table);
 
-            MessageBox.Show("Заявка отменена");
+            MessageBox.Show("Отзыв удалён");
+        }
+
+        private void red_button_Click(object sender, EventArgs e)
+        {
+            String login = login_app_box.Text;
+            String fullName = fullName_app_box.Text;
+            String date_p = date_p_app_box.Text;
+            String number = number_app_box.Text;
+            String dop = dob_app_box.Text;
+            String pob = pob_app_box.Text;
+            String otziv = otziv_box.Text;
+            String red_login = red_login_box.Text;
+
+            DataBase db = new DataBase();
+            DataTable table = new DataTable();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand commandd = new MySqlCommand("UPDATE application SET otziv = @otz WHERE login = @uL", db.getConnection());
+
+            commandd.Parameters.Add("@otz", MySqlDbType.VarChar).Value = otziv;
+            commandd.Parameters.Add("@uL", MySqlDbType.VarChar).Value = login;
+
+            adapter.SelectCommand = commandd;
+            adapter.Fill(table);
+            {
+                MessageBox.Show("Отзыв успешно изменен");
+            }
         }
     }
 }

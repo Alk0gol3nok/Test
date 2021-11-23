@@ -31,14 +31,14 @@ namespace Firts_Forms
         {
             this.mainPannel2 = new System.Windows.Forms.Panel();
             this.main_pannel = new System.Windows.Forms.Panel();
-            this.type_app_box = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.login_delete_box = new System.Windows.Forms.TextBox();
+            this.delete_button = new System.Windows.Forms.Button();
             this.login_app_box = new System.Windows.Forms.TextBox();
             this.fullName_app_box = new System.Windows.Forms.TextBox();
             this.date_button = new System.Windows.Forms.Button();
-            this.date_y_app_box = new System.Windows.Forms.TextBox();
+            this.otziv_box = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.red_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -62,8 +62,7 @@ namespace Firts_Forms
             this.panel3 = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Label();
             this.mainPannel = new System.Windows.Forms.Label();
-            this.delete_button = new System.Windows.Forms.Button();
-            this.login_delete_box = new System.Windows.Forms.TextBox();
+            this.red_login_box = new System.Windows.Forms.TextBox();
             this.mainPannel2.SuspendLayout();
             this.main_pannel.SuspendLayout();
             this.calendare_pannel.SuspendLayout();
@@ -96,16 +95,15 @@ namespace Firts_Forms
             // 
             // main_pannel
             // 
+            this.main_pannel.Controls.Add(this.red_login_box);
             this.main_pannel.Controls.Add(this.login_delete_box);
             this.main_pannel.Controls.Add(this.delete_button);
-            this.main_pannel.Controls.Add(this.type_app_box);
-            this.main_pannel.Controls.Add(this.label2);
             this.main_pannel.Controls.Add(this.login_app_box);
             this.main_pannel.Controls.Add(this.fullName_app_box);
             this.main_pannel.Controls.Add(this.date_button);
-            this.main_pannel.Controls.Add(this.date_y_app_box);
+            this.main_pannel.Controls.Add(this.otziv_box);
             this.main_pannel.Controls.Add(this.label3);
-            this.main_pannel.Controls.Add(this.button1);
+            this.main_pannel.Controls.Add(this.red_button);
             this.main_pannel.Controls.Add(this.label4);
             this.main_pannel.Controls.Add(this.label5);
             this.main_pannel.Controls.Add(this.label6);
@@ -121,32 +119,34 @@ namespace Firts_Forms
             this.main_pannel.Size = new System.Drawing.Size(960, 221);
             this.main_pannel.TabIndex = 31;
             // 
-            // type_app_box
+            // login_delete_box
             // 
-            this.type_app_box.Location = new System.Drawing.Point(4, 41);
-            this.type_app_box.Name = "type_app_box";
-            this.type_app_box.Size = new System.Drawing.Size(100, 20);
-            this.type_app_box.TabIndex = 7;
+            this.login_delete_box.Location = new System.Drawing.Point(3, 199);
+            this.login_delete_box.Name = "login_delete_box";
+            this.login_delete_box.Size = new System.Drawing.Size(138, 20);
+            this.login_delete_box.TabIndex = 32;
             // 
-            // label2
+            // delete_button
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Тип жалобы";
+            this.delete_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.delete_button.Location = new System.Drawing.Point(147, 195);
+            this.delete_button.Name = "delete_button";
+            this.delete_button.Size = new System.Drawing.Size(127, 23);
+            this.delete_button.TabIndex = 31;
+            this.delete_button.Text = "Удалить отзыв";
+            this.delete_button.UseVisualStyleBackColor = true;
+            this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
             // login_app_box
             // 
-            this.login_app_box.Location = new System.Drawing.Point(119, 41);
+            this.login_app_box.Location = new System.Drawing.Point(17, 41);
             this.login_app_box.Name = "login_app_box";
             this.login_app_box.Size = new System.Drawing.Size(100, 20);
             this.login_app_box.TabIndex = 8;
             // 
             // fullName_app_box
             // 
-            this.fullName_app_box.Location = new System.Drawing.Point(236, 41);
+            this.fullName_app_box.Location = new System.Drawing.Point(123, 41);
             this.fullName_app_box.Name = "fullName_app_box";
             this.fullName_app_box.Size = new System.Drawing.Size(100, 20);
             this.fullName_app_box.TabIndex = 9;
@@ -154,7 +154,7 @@ namespace Firts_Forms
             // date_button
             // 
             this.date_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.date_button.Location = new System.Drawing.Point(731, 195);
+            this.date_button.Location = new System.Drawing.Point(280, 195);
             this.date_button.Name = "date_button";
             this.date_button.Size = new System.Drawing.Size(75, 23);
             this.date_button.TabIndex = 30;
@@ -162,36 +162,38 @@ namespace Firts_Forms
             this.date_button.UseVisualStyleBackColor = true;
             this.date_button.Click += new System.EventHandler(this.date_button_Click);
             // 
-            // date_y_app_box
+            // otziv_box
             // 
-            this.date_y_app_box.Location = new System.Drawing.Point(814, 41);
-            this.date_y_app_box.Name = "date_y_app_box";
-            this.date_y_app_box.Size = new System.Drawing.Size(100, 20);
-            this.date_y_app_box.TabIndex = 26;
+            this.otziv_box.Location = new System.Drawing.Point(653, 41);
+            this.otziv_box.Multiline = true;
+            this.otziv_box.Name = "otziv_box";
+            this.otziv_box.Size = new System.Drawing.Size(303, 73);
+            this.otziv_box.TabIndex = 26;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(151, 16);
+            this.label3.Location = new System.Drawing.Point(43, 16);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 17;
             this.label3.Text = "Логин";
             // 
-            // button1
+            // red_button
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(812, 169);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 49);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Ответить на заявку";
-            this.button1.UseVisualStyleBackColor = true;
+            this.red_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.red_button.Location = new System.Drawing.Point(812, 169);
+            this.red_button.Name = "red_button";
+            this.red_button.Size = new System.Drawing.Size(144, 49);
+            this.red_button.TabIndex = 28;
+            this.red_button.Text = "Редактировать отзыв";
+            this.red_button.UseVisualStyleBackColor = true;
+            this.red_button.Click += new System.EventHandler(this.red_button_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(269, 16);
+            this.label4.Location = new System.Drawing.Point(157, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 18;
@@ -200,7 +202,7 @@ namespace Firts_Forms
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(363, 16);
+            this.label5.Location = new System.Drawing.Point(242, 16);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 13);
             this.label5.TabIndex = 19;
@@ -209,7 +211,7 @@ namespace Firts_Forms
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(487, 16);
+            this.label6.Location = new System.Drawing.Point(359, 16);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 13);
             this.label6.TabIndex = 20;
@@ -218,7 +220,7 @@ namespace Firts_Forms
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(603, 16);
+            this.label7.Location = new System.Drawing.Point(459, 16);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 13);
             this.label7.TabIndex = 21;
@@ -227,7 +229,7 @@ namespace Firts_Forms
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(713, 16);
+            this.label8.Location = new System.Drawing.Point(560, 16);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 13);
             this.label8.TabIndex = 22;
@@ -236,36 +238,36 @@ namespace Firts_Forms
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(820, 16);
+            this.label9.Location = new System.Drawing.Point(788, 16);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 13);
+            this.label9.Size = new System.Drawing.Size(40, 13);
             this.label9.TabIndex = 24;
-            this.label9.Text = "Дата утвержд.";
+            this.label9.Text = "Отзыв";
             // 
             // date_p_app_box
             // 
-            this.date_p_app_box.Location = new System.Drawing.Point(352, 41);
+            this.date_p_app_box.Location = new System.Drawing.Point(229, 41);
             this.date_p_app_box.Name = "date_p_app_box";
             this.date_p_app_box.Size = new System.Drawing.Size(100, 20);
             this.date_p_app_box.TabIndex = 10;
             // 
             // number_app_box
             // 
-            this.number_app_box.Location = new System.Drawing.Point(467, 41);
+            this.number_app_box.Location = new System.Drawing.Point(335, 41);
             this.number_app_box.Name = "number_app_box";
             this.number_app_box.Size = new System.Drawing.Size(100, 20);
             this.number_app_box.TabIndex = 11;
             // 
             // dob_app_box
             // 
-            this.dob_app_box.Location = new System.Drawing.Point(583, 41);
+            this.dob_app_box.Location = new System.Drawing.Point(441, 41);
             this.dob_app_box.Name = "dob_app_box";
             this.dob_app_box.Size = new System.Drawing.Size(100, 20);
             this.dob_app_box.TabIndex = 12;
             // 
             // pob_app_box
             // 
-            this.pob_app_box.Location = new System.Drawing.Point(699, 41);
+            this.pob_app_box.Location = new System.Drawing.Point(547, 41);
             this.pob_app_box.Name = "pob_app_box";
             this.pob_app_box.Size = new System.Drawing.Size(100, 20);
             this.pob_app_box.TabIndex = 13;
@@ -307,13 +309,7 @@ namespace Firts_Forms
             // 
             this.t_field.FormattingEnabled = true;
             this.t_field.Items.AddRange(new object[] {
-            "Жалоба",
-            "Вопрос",
-            "Повышение зп",
-            "Стать сотрудником",
-            "Хочу вернуть торва",
-            "Проблема с платежом",
-            "Хочу задать вопрос (test)"});
+            "type"});
             this.t_field.Location = new System.Drawing.Point(1057, 173);
             this.t_field.Name = "t_field";
             this.t_field.Size = new System.Drawing.Size(121, 21);
@@ -421,23 +417,12 @@ namespace Firts_Forms
             this.mainPannel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainPannel_MouseDown);
             this.mainPannel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainPannel_MouseMove);
             // 
-            // delete_button
+            // red_login_box
             // 
-            this.delete_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.delete_button.Location = new System.Drawing.Point(598, 195);
-            this.delete_button.Name = "delete_button";
-            this.delete_button.Size = new System.Drawing.Size(127, 23);
-            this.delete_button.TabIndex = 31;
-            this.delete_button.Text = "Отменить заявку";
-            this.delete_button.UseVisualStyleBackColor = true;
-            this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
-            // 
-            // login_delete_box
-            // 
-            this.login_delete_box.Location = new System.Drawing.Point(452, 195);
-            this.login_delete_box.Name = "login_delete_box";
-            this.login_delete_box.Size = new System.Drawing.Size(138, 20);
-            this.login_delete_box.TabIndex = 32;
+            this.red_login_box.Location = new System.Drawing.Point(668, 197);
+            this.red_login_box.Name = "red_login_box";
+            this.red_login_box.Size = new System.Drawing.Size(138, 20);
+            this.red_login_box.TabIndex = 33;
             // 
             // App_adminForm
             // 
@@ -478,7 +463,6 @@ namespace Firts_Forms
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox t_field;
         private System.Windows.Forms.TextBox pob_app_box;
@@ -487,16 +471,16 @@ namespace Firts_Forms
         private System.Windows.Forms.TextBox date_p_app_box;
         private System.Windows.Forms.TextBox fullName_app_box;
         private System.Windows.Forms.TextBox login_app_box;
-        private System.Windows.Forms.TextBox type_app_box;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button type_pp;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button red_button;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.TextBox date_y_app_box;
+        private System.Windows.Forms.TextBox otziv_box;
         private System.Windows.Forms.Button date_button;
         private System.Windows.Forms.Panel calendare_pannel;
         private System.Windows.Forms.Panel main_pannel;
         private System.Windows.Forms.Button delete_button;
         private System.Windows.Forms.TextBox login_delete_box;
+        private System.Windows.Forms.TextBox red_login_box;
     }
 }

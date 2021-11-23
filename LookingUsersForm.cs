@@ -184,12 +184,7 @@ namespace Firts_Forms
             number_box_5.Text = table.Rows[4][6].ToString();
             role_box_5.Text = table.Rows[4][7].ToString();
 
-            login_box_6.Text = table.Rows[5][1].ToString();
-            fio_box_6.Text = table.Rows[5][3].ToString();
-            date_d_box_6.Text = table.Rows[5][4].ToString();
-            date_p_box_6.Text = table.Rows[5][5].ToString();
-            number_box_6.Text = table.Rows[5][6].ToString();
-            role_box_6.Text = table.Rows[5][7].ToString();
+            
 
 
 
